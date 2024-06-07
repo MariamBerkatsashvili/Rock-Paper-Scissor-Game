@@ -1,0 +1,182 @@
+*, ::before, ::after{
+    box-sizing: border-box;  
+ }
+  
+ body{
+    padding: 0;
+    margin: 0;  
+    background: #707884dc;
+    color: #fff;
+    background-image: radial-gradient(#707884dc 50%, #ffff );
+    font-family: "Jersey 20", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+ }
+  
+ .game{
+    position:relative;
+ }
+  
+ .gameNAme{
+    display: flex;
+    justify-content: center;
+    top: 30px;
+    font-size: 3rem;
+ }
+  
+ .score{
+    position: absolute;
+    margin-top: 2rem;
+    display: flex;
+    width: 20rem;
+    height:12.3rem;
+    justify-content: space-evenly;
+    border: solid 2px #707884;
+    border-radius: 20px;
+    margin-left: 54rem;
+    background-image: url(images/hu\ ai.jpg);
+    background-size: cover;
+    background-position: center;
+    text-shadow:black 2px 2px;
+    box-shadow: 0px 0px 10px #fff, 0px 0px 10px #fff inset;
+ }
+  
+ .score:hover{
+    box-shadow: 0px 0px 10px red, 0px 0px 10px orangered inset;
+    border:2px solid orange;
+    text-shadow: 2px 2px orangered;
+ }
+  
+ .playerScore, .AI_Score{
+    margin-top: 1rem;
+ }
+  
+ .playerCount, .AI_Count{
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    animation: tablo 1s linear 0s infinite;
+ }
+  
+ .tableau{
+    font-weight: bolder;
+    align-self: center;
+    font-size:1.5rem;
+    animation: tablo 1s linear 0s infinite;
+    margin-top:10px;
+ }
+ @keyframes tablo {
+    from {color: #707884;}
+    to {color: #fff;}
+  }
+  
+ /* .move{
+    font-size: 2rem;
+ }   */
+  
+ .options{
+    display: flex;
+    width: 30rem;
+    justify-content: space-between;
+    margin-top: 2rem;
+    margin-left:20px;
+ }
+  
+ .rock, .paper, .scissor{
+    padding: 0.5rem;
+    width: 120px;
+    border-radius: 10px;
+    border-radius: 20px;
+    cursor: pointer;  
+    box-shadow: 0px 0px 10px #fff, 0px 0px 10px #fff inset;
+  
+ }
+ .rock:hover, .paper:hover, .scissor:hover{
+    transition: 0.5s ease-in-out;
+    border-radius: 20px;
+    background-image: linear-gradient(red, yellow);
+    transform: scale(1.2);
+ }
+  
+ .photo{
+    width:80px;
+    height:150px;
+    border-radius: 20px;
+ }
+  
+ .choices{
+    display: flex;
+    flex-direction: row;
+    width:80rem;
+    margin-top: 50px;
+    justify-content: space-evenly;
+ }
+  
+ .humanChoice, .AI_Choice{
+    width: 40%;
+    height:400px;
+    border: white 2px solid;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+ }
+ 
+ .start{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:red, 2px, solid;
+    flex-direction: column;
+ }
+ 
+  #vs, .restart, #restart, #gameResult{
+    margin-top: 20px;
+    font-size: 1.2rem;
+    width:200px;
+    margin:auto;
+    display: flex;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    border:#fff solid 2px;
+    border-radius: 30px;
+    color:#fff;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    padding:10px;
+ }
+  
+  
+ #vs:hover, .restart:hover, #restart:hover{
+    font-size:1.5rem;
+    color:coral;
+    border:coral 2px solid;
+    background-color: #fff;
+    transform:scale(1.1);
+ }
+    
+
+ /* -------------- style for js---------------------- */
+  
+ .addedImage{
+    width:200px;
+    height:380px;
+    border-radius: 20px;
+ }
+  
+ .icons, #playerIcon, #AI_Icon{
+    width:30px;
+    height:30px;
+ }
+  
+ #gameResult{
+   background-color:#fff ;
+   color:#707884
+
+ } 
+
+ /* ------------media queries----------- */
+  
